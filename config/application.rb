@@ -28,6 +28,7 @@ module Silver
           controller_specs: true,
           request_specs: false
       g.fixture_replacement :factory_girl, dir: "spec/factories"
+      config.action_mailer.default_url_options = { host: 'localhost:3000' }
     end
   end
 end

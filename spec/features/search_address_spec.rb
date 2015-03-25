@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-feature 'User search for address' do
+feature 'User inputs full address field and clicks search' do
     background do
     visit root_path
     fill_in "Lemme know where you wanna expire", with: build(:address)
